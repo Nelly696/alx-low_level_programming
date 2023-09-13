@@ -1,0 +1,12 @@
+#include "main.h"
+Int print_alphabet(void)
+{
+     Char letters = 'a'
+     While (letters <= 'z')
+     {
+           _putchar(a);
+           a++;
+     }
+     _putchar('\n');
+     return (0);
+}
