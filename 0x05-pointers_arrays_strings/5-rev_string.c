@@ -2,30 +2,33 @@
 /**
  * rev_string - function name.
  * @s: function parameter
+ * Return: string in reverse
  */
 
 void rev_string(char *s)
-
 {
+
+	char rv = s[0];
+
+	int c = 0;
 
 	int i;
 
-	int count = 0;
+	while (s[c] != '\0')
 
-	for (i = 0; s[i] != '\0'; i++)
-		count++;
+		c++;
 
-	for (i = 0; i < count / 2; i++)
+	for (i = 0; i < c; i++)
 	{
+		c--;
 
-		char j;
+		rv = s[i];
 
-		j = s[i];
+		s[i] = s[c];
 
-		s[i] = s[count - 1 - i];
-
-		s[count - 1 - j] = j;
+		s[c] = rv;
 
 	}
+
 
 }
