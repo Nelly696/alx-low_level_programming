@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - the function name.
  * @a: parameter 1
@@ -6,22 +7,20 @@
  */
 
 void print_array(int *a, int n)
-{
-	int i;
 
-	for (i = 0; i < n; i++)
+{
+	int t;
+
+	for (t = 0; t < n; t++)
 	{
 
-		printf("%d", a[i]);
-		{
+		printf("%d", a[t]);
+		if (t != n - 1)
+			printf(", ");
 
-			if (i < n - 1)
-
-				printf(", ");
-
-		}
-
-		printf("\n");
 	}
+
+	printf("\n");
+
 
 }
