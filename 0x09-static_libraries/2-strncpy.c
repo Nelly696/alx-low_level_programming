@@ -1,28 +1,25 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: length
+ * _strncpy - concatinate the values of two integers.
+ * @dest: arg a
+ * @src: arg b
+ * @n: arg n
+ *
+ * Return: void.
  */
 
-int _strlen(char *s)
-
+char *_strncpy(char *dest, char *src, int n)
 {
+	int i;
 
-	int longi = 0;
-
-	while (*s != '\0')
-
+	for (i = 0; src[i] != '\0' && i < n; i++)
 	{
-
-		longi++;
-
-		s++;
-
+		dest[i] = src[i];
 	}
+	for (; i < n; i++)
 
-	return (longi);
+	dest[i] = '\0';
 
+	return (dest);
 }
-

@@ -1,1 +1,1 @@
-This is README.md file is for the directory
+This read.me file is for the directory
